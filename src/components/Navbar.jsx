@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 
-const links = ["Home","About","Services","Portfolio","Blog","Contact"];
+const links = ["Home","About","Services","Portfolio","Blog"];
 
 export default function Navbar({ navigate, currentView }) {
   const [scrolled, setScrolled] = useState(false);
@@ -12,7 +12,7 @@ export default function Navbar({ navigate, currentView }) {
     const onScroll = () => {
       setScrolled(window.scrollY > 40);
       if (currentView !== "main") return;
-      const ids = ["home","about","services","portfolio","stats","contact"];
+      const ids = ["home","about","services","portfolio","stats"];
       for (let i = ids.length - 1; i >= 0; i--) {
         const el = document.getElementById(ids[i]);
         if (el && window.scrollY >= el.offsetTop - 130) {
@@ -68,11 +68,8 @@ export default function Navbar({ navigate, currentView }) {
             ))}
           </div>
 
-          {/* CTA + hamburger */}
+          {/* hamburger */}
           <div className="flex items-center gap-3">
-            <button onClick={() => handleClick("Contact")} className="btn-primary hidden md:inline-flex text-sm py-2.5 px-5">
-              Hire Me →
-            </button>
             <button onClick={() => setMobileOpen(!mobileOpen)} className="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
               <span className="block w-5 h-0.5 bg-slate-300 rounded transition-all duration-300" style={{ transform: mobileOpen ? "rotate(45deg) translate(0,7px)" : "" }} />
               <span className="block w-5 h-0.5 bg-slate-300 rounded transition-all duration-300" style={{ opacity: mobileOpen ? 0 : 1 }} />
@@ -90,7 +87,6 @@ export default function Navbar({ navigate, currentView }) {
               {l}
             </button>
           ))}
-          <button onClick={() => handleClick("Contact")} className="btn-primary mt-3 text-sm justify-center">Hire Me →</button>
         </div>
       </div>
     </header>
