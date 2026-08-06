@@ -52,10 +52,6 @@ export default function Hero({ navigate }) {
             {/* CTAs */}
             <div className="flex flex-wrap gap-3 mb-8">
               <button className="btn-primary" onClick={() => scrollTo("portfolio")}>View Case Studies →</button>
-              <button className="btn-secondary" onClick={() => scrollTo("contact")}>Get In Touch</button>
-              <a href="https://wa.me/92370016092" target="_blank" rel="noopener noreferrer" className="btn-green">
-                💬 WhatsApp
-              </a>
             </div>
 
             {/* Stats */}
@@ -88,11 +84,6 @@ export default function Hero({ navigate }) {
                     <div className="text-white font-bold text-sm" style={{ fontFamily: "var(--font-heading)" }}>6+ Years</div>
                     <div style={{ color: "var(--dim)", fontSize: ".7rem" }}>Professional Experience</div>
                   </div>
-                </div>
-                {/* Contact quick links */}
-                <div className="flex gap-2 mt-4 justify-center">
-                  <a href="mailto:muhtsana@gmail.com" className="btn-secondary" style={{ padding: "6px 12px", fontSize: ".75rem" }}>✉ Email</a>
-                  <a href="https://wa.me/92370016092" target="_blank" rel="noopener noreferrer" className="btn-green" style={{ padding: "6px 12px", fontSize: ".75rem" }}>💬 WhatsApp</a>
                 </div>
               </div>
               {/* Floating badges */}
