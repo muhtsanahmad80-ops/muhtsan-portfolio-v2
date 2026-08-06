@@ -54,7 +54,6 @@ export default function Home() {
           <Services />
           <CaseStudies />
           <Stats />
-          <Contact />
         </main>
       )}
 
