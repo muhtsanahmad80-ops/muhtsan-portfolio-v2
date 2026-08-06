@@ -6,7 +6,6 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import CaseStudies from "@/components/CaseStudies";
 import Stats from "@/components/Stats";
-import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Blog from "@/components/Blog";
 import BlogPost from "@/components/BlogPost";
